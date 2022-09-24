@@ -1,0 +1,145 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(116, 173, 169, 0.76);
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    background-color: #00504b;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.logo{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.logo-other{
+    padding: 0 0 0 50px;
+    position: fixed;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fcfcfc;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header p{
+    background-color: #0e0083;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.container{
+    margin: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.video iframe{
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.video{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.video p{
+    max-width: 900px;
+    margin: 10px;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.image img{
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #00504b;
+    height: 80px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    color: #fcfcfc;
+}
+
+footer a{
+    text-decoration: none;
+    color: #00e3da;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.up{
+    background-color: #009189;
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.up a{
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.form a{
+    text-decoration: none;
+    color: #00504b;
+    padding-left: 5px;
+    padding-right: 5px;
+}

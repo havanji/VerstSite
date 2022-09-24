@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/mycss.css">
+    <title>Подання заявки</title>
+</head>
+<body>
+<div class="logo-other">
+    <a href="index.html">
+        <img class="logo" src="media/thumb_LC_round.png" alt="Logo">
+    </a>
+</div>
+<div class="form">
+    <form>
+        <fieldset>
+            <legend>Ваш логін</legend>
+            <label for="login">Ведіть логін:</label><br>
+            <input type="text" id="login" placeholder="Введіть свій Логін" required><br>
+            <label for="email">Введіть свій E-Mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+            <label for="userPassword">Введіть свій пароль:</label><br>
+            <input id="userPassword" type="password" placeholder="********"><br>
+            <span><a href="register.html">Створти акаунт (якщо його не має)</a></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>Невеличне опитування</legend>
+            <span>Як ви про нас дізнались?</span><br>
+            <input type="checkbox" id="what1" name="what" value="Quiz">
+            <label for="what1">Реклама в Instagram</label><br>
+            <input type="checkbox" id="what2" name="what" value="Quiz">
+            <label for="what2">Реклама в YouTube</label><br>
+            <input type="checkbox" id="what3" name="what" value="Quiz">
+            <label for="what3">Реклама в TikTok</label><br>
+            <input type="checkbox" id="what4" name="what" value="Quiz">
+            <label for="what4">Google Рекама</label><br>
+            <input type="checkbox" id="what5" name="what" value="Quiz">
+            <label for="what5">Сайт childcamp.com.ua</label><br>
+            <input type="checkbox" id="what6" name="what" value="Quiz">
+            <label for="what6">Рекомендації друзів</label><br>
+
+            <span>Чи будете ви рекомендувати нас?</span><br>
+            <input type="radio" id="ys" name="what" value="Quiz">
+            <label for="ys">Так!</label><br>
+            <input type="radio" id="mb" name="what" value="Quiz">
+            <label for="mb">Напевно</label><br>
+            <input type="radio" id="no" name="what" value="Quiz">
+            <label for="no">Ні</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Оплата</legend>
+            <label for="cost">Виберіть спосіб оплати</label><br>
+            <select name="cost" id="cost" required>
+                <option value="no info"></option>
+                <option value="master">Master Card</option>
+                <option value="visa">Visa</option>
+                <option value="paypal">PayPal</option>
+                <option value="qiwi">Qiwi</option>
+            </select>
+            <br>
+            <label for="№card">№ картки</label><br>
+            <input type="text" id="№card" placeholder="Введіть № картки" maxlength="16" size="16" required><br>
+            <label for="mm" for="yy">Місяць і рік до якого дійсна картка</label><br>
+            <input type="text" id="mm" placeholder="mm" maxlength="2" size="2" required>
+            <input type="text" id="yy" placeholder="yy" maxlength="2" size="2" required><br>
+            <label for="CVC">CVC</label><br>
+            <input type="password" id="CVC" name="CVC" placeholder="CVC" maxlength="3" size="3" required><br>
+        </fieldset>
+
+        <fieldset>
+        <legend>Політика конфіденційності</legend>
+        <a href="https://policies.google.com/privacy?hl=uk" target="_blank">Політика конфіденційності</a><br>
+            <input type="radio" id="policy" name="policy" value="policy">
+            <label for="policy">Я ознайомлений з політикою конфіденційності</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Примітка/Відгук</legend>
+            <label for="primitka"></label>
+            <textarea id="primitka" name="primitka" rows="4" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <a href="index.html"><input type="submit" value="Підтвердити"></a>
+        <input type="reset" value="Скинути">
+    </form>
+</div>
+</body>
+</html>
