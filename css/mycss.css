@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    height: auto;
 }
 
 *,*::before, *::after{
@@ -9,7 +10,7 @@ html{
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(116, 173, 169, 0.76);
+    background: linear-gradient(to bottom right, #576182, #1FC5A8);
 }
 
 nav{
@@ -21,6 +22,7 @@ nav{
     width: 100%;
     padding: 10px;
     margin: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .logo{
@@ -52,6 +54,10 @@ header p{
 
 .container{
     margin: 10px;
+    background-color: rgba(243,253,255,0.05);
+    padding: 10px;
+    border-radius: 11px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .link{
@@ -62,13 +68,13 @@ header p{
 }
 
 .video iframe{
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 11px;
 }
 
 .video{
     display: flex;
     flex-direction: row;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .video p{
@@ -91,7 +97,8 @@ header p{
     max-width: 300px;
     max-height: 300px;
     margin: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 11px;
 }
 
 footer{
@@ -131,6 +138,7 @@ footer a{
     color: #fcfcfc;
 }
 
+
 .form{
     display: flex;
     justify-content: center;
@@ -142,4 +150,42 @@ footer a{
     color: #00504b;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+form{
+    background-color: rgba(243,253,255,0.38);
+    padding: 10px;
+    border-radius: 11px;
+}
+
+fieldset{
+    border-radius: 5px;
+}
+
+.button{
+    border: 1px solid #00504b;
+    color: #222222;
+    background-image: -webkit-linear-gradient(45deg, #00504b 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #00504b 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 7px 14px 7px 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+.button:hover {
+    background-position: 0;
+}
+.button:hover, .button:focus {
+    color: #fff;
+    outline: 0;
 }
