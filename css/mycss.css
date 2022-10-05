@@ -1,6 +1,6 @@
 html{
     box-sizing: border-box;
-    height: auto;
+    min-height: 100%;
 }
 
 *,*::before, *::after{
