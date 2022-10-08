@@ -93,6 +93,7 @@ header p{
     align-content: center;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -104,6 +105,11 @@ header p{
     margin: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     border-radius: 11px;
+    transition: 1s;
+}
+
+.image img:hover {
+    transform: scale(1.07);
 }
 
 footer{
