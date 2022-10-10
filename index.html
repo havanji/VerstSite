@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La La Campus</title>
   <link type="text/css" rel="stylesheet" href="css/mycss.css">
-  <link type="text/css" rel="stylesheet" href="css/slider.css">
-  <script src="JS/slider.js"></script>
+  <script src="JS/ScrollTop.js"></script>
+  <title>La La Campus</title>
 </head>
 
 <body>
@@ -23,12 +21,10 @@
     </nav>
   </header>
 
-  <div class="up">
-    <span><a href="index.html">&#8657</a></span>
-  </div>
+  <button onclick="topFunction()" id="myBtn"
+          title="Go to top">&#8657</button>
 
-  <section>
-    <div class="container">
+  <section class="container">
       <h2>Трішки про наш табір</h2>
       <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dUddsMjSDtQ"
@@ -36,7 +32,7 @@
               clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
         <p>
-          La La Campus - сучасний табір в Карпатах для школярів 11-15 років на дистанційному навчанні.
+          <strong> La La Campus </strong> - сучасний табір в Карпатах для школярів 11-15 років на дистанційному навчанні.
           Комфортабельний готельний комплекс в гірському лісі, велика облаштована територія, 5-тиразове харчування
           (3 основні + 2 додаткові), зручні робочі зони з Wi-Fi, цікаві навчальні офлайн тренінги і воркшопи, спортивні
           активності, творчі майстер-класи, виїзні екскурсії на вихідні і надзвичайна атмосфера. Ми поєднали онлайн
@@ -48,35 +44,33 @@
           під наглядом тимлідерів. Після вечері є вільний час та активності для цікавого відпочинку.
         </p>
       </div>
-    </div>
   </section>
 
-  <section>
-      <div class="container">
+  <section class="container">
         <h3>Розташування табору</h3>
         <div class="images">
-          <div class="image">
+          <figure class="image">
             <img src="media/Flover.jpg" alt="flover"><br>
-            <span>Красива природа</span>
-          </div>
-          <div class="image">
-            <img src="media/landscape.JPG" alt="landscape"><br>
-            <span>Неймовірні краєвиди</span>
-          </div>
-          <div class="image">
+            <figcaption>Красива природа</figcaption>
+          </figure>
+          <figure class="image">
+            <img src="media/landscape.JPG" alt="landscape">
+            <figcaption>Неймовірні краєвиди</figcaption>
+          </figure>
+          <figure class="image">
             <img src="media/tree.JPG" alt="tree"><br>
-            <span>Чудові місця</span>
-          </div>
-          <div class="image">
+            <figcaption>Чудові місця</figcaption>
+          </figure>
+          <figure class="image">
             <img src="media/landscape2.JPG" alt="landscape2"><br>
-            <span>Прекрасні пейзажі</span>
-          </div>
-          <div class="image">
+            <figcaption>Прекрасні пейзажі</figcaption>
+          </figure>
+          <figure class="image">
             <img src="media/sunset.jpg" alt="sunset"><br>
-            <span>Незабутні заходи сонця</span>
-          </div>
+            <figcaption>Незабутні заходи сонця</figcaption>
+          </figure>
         </div>
-        <p><b>Адреса:</b> <a class="link" href="https://cutt.ly/iVQ9mmW" target="_blank">Україна,
+        <p><strong>Адреса:</strong> <a class="link" href="https://cutt.ly/iVQ9mmW" target="_blank">Україна,
           Лекечі (Чернівецька область), вул. Гірська, 26</a><br>
           Кількість місць: 30 <br>
           Трансфер з: Київ, Одеса, Львів, Дніпро <br><br>
@@ -94,7 +88,6 @@
           Ми проводимо освітньо-розважальні проєкти для дітей з 2016 року і маємо великий досвід організації яскравих
           і незабутніх дитячих таборів.
         </p>
-      </div>
   </section>
 
   <footer>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="css/mycss.css">
+    <script src="JS/ScrollTop.js"></script>
     <title>Про нас</title>
 </head>
 
@@ -20,14 +21,13 @@
     </nav>
 </header>
 
-<div class="up">
-    <span><a href="about.html">&#8657</a></span>
-</div>
+<button onclick="topFunction()" id="myBtn"
+        title="Go to top">&#8657</button>
 
 <section>
     <div class="container">
         <h2>Про табір</h2>
-        <p><b>La La Campus - сучасний табір в Карпатах для школярів 11-15 років на дистанційному навчанні.</b>
+        <p><strong>La La Campus - сучасний табір в Карпатах для школярів 11-15 років на дистанційному навчанні.</strong>
             Комфортабельний готельний комплекс в гірському лісі, велика облаштована територія, 5-тиразове харчування
             (3 основні + 2 додаткові), зручні робочі зони з Wi-Fi, цікаві навчальні офлайн тренінги і воркшопи,
             спортивні активності, творчі майстер-класи, виїзні екскурсії на вихідні і надзвичайна атмосфера
@@ -54,39 +54,20 @@
         Ми проводимо освітньо-розважальні проєкти для дітей з 2016 року і маємо великий досвід організації яскравих
         і незабутніх дитячих таборів.<br></p>
         <div class="images">
-            <div class="image">
-                <img src="media/kids6.JPG" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids7.JPG" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids3.jpg" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids4.JPG" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids5.JPG" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids8.JPG" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids2.jpg" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids1.jpg" alt="kids">
-            </div>
-            <div class="image">
-                <img src="media/kids9.JPG" alt="kids">
-            </div>
+            <img class="image" src="media/kids6.JPG" alt="kids">
+            <img class="image" src="media/kids7.JPG" alt="kids">
+            <img class="image" src="media/kids3.jpg" alt="kids">
+            <img class="image" src="media/kids4.JPG" alt="kids">
+            <img class="image" src="media/kids5.JPG" alt="kids">
+            <img class="image" src="media/kids8.JPG" alt="kids">
+            <img class="image" src="media/kids2.jpg" alt="kids">
+            <img class="image" src="media/kids1.jpg" alt="kids">
+            <img class="image" src="media/kids9.JPG" alt="kids">
         </div>
     </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Територія та інфраструктура</h2>
         <p>Готельний комплекс, де проходить табір знаходиться у селі Лекечі Чернівецької області.
         Комплекс розташований в Карпатському лісі, тому тут надзвичайно мальовничі пейзажі і кришталево чисте повітря.
@@ -121,48 +102,21 @@
 
         <h3>Розташування табору</h3>
         <div class="images">
-            <div class="image">
-                <img src="media/home1.jpg" alt="home">
-            </div>
-            <div class="image">
-                <img src="media/home2.jpg" alt="home">
-            </div>
-            <div class="image">
-                <img src="media/home3.jpg" alt="home">
-            </div>
-            <div class="image">
-                <img src="media/home4.jpg" alt="home">
-            </div>
-            <div class="image">
-                <img src="media/home5.jpg" alt="home">
-            </div>
-            <div class="image">
-                <img src="media/home6.jpg" alt="home">
-            </div>
-            <div class="image">
-                <img src="media/home7.jpg" alt="home">
-            </div>
-            <div class="image">
-                <img src="media/home8.jpg" alt="home">
-            </div>
+            <img class="image" src="media/home1.jpg" alt="home">
+            <img class="image" src="media/home2.jpg" alt="home">
+            <img class="image" src="media/home3.jpg" alt="home">
+            <img class="image" src="media/home4.jpg" alt="home">
+            <img class="image" src="media/home5.jpg" alt="home">
+            <img class="image" src="media/home6.jpg" alt="home">
+            <img class="image" src="media/home7.jpg" alt="home">
+            <img class="image" src="media/home8.jpg" alt="home">
         </div>
-<!--        <div class="images">-->
-<!--            <div class="image">-->
-<!--                <img src="media/home6.jpg" alt="home">-->
-<!--            </div>-->
-<!--            <div class="image">-->
-<!--                <img src="media/home7.jpg" alt="home">-->
-<!--            </div>-->
-<!--            <div class="image">-->
-<!--                <img src="media/home8.jpg" alt="home">-->
-<!--            </div>-->
-<!--        </div>-->
-        <p><b>Адреса:</b> <a class="link" href="https://cutt.ly/iVQ9mmW" target="_blank">Україна,
+        <p><strong>Адреса:</strong> <a class="link" href="https://cutt.ly/iVQ9mmW" target="_blank">Україна,
             Лекечі (Чернівецька область), вул. Гірська, 26</a><br>
             Кількість місць: 30 <br>
 
         <h2>Проживання дітей</h2>
-    <span>Діти проживатимуть у номерах класу “Люкс” <b>по 4 особи в номері.</b></span>
+    <span>Діти проживатимуть у номерах класу “Люкс” <strong>по 4 особи в номері.</strong></span>
 
     <h3>У кожному номері готелю є:</h3>
     <ul>
@@ -172,11 +126,9 @@
         <li>а також телевізор із плоским екраном.</li>
     </ul>
     <span>Усі номери укомплектовані постільною білизною.</span>
-    </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Програма</h2>
         <p>Концепція табору поєднує дистанційне навчання, інтелектуальний розвиток, активний відпочинок та оздоровлення.
             В першій половині дня діти навчаються онлайн за власною шкільною програмою. Тимлідери табору слідкують за
@@ -203,53 +155,49 @@
             <li>вечірні кінопокази (включають неформальну практику англійської мови);</li>
             <li>атмосферні вечори біля багаття, маршмеллоу-барбекю, пісні під гітару та захоплюючі історії;</li>
         </ul>
-    </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Тематики додаткових тренінгів:</h2>
         <ul>
             <li>
-                <b>Англійський клуб.</b><br>
+                <strong>Англійський клуб.</strong><br>
                 &#9900; Діти регулярно відвідують англійський розмовний клуб. Програма заходів включає авторські методики
                 практики англійської мови. Клуб проходить по групам з урахуванням рівня мови дітей.
             </li>
             <li>
-                <b>Маркетинг.</b><br>
+                <strong>Маркетинг.</strong><br>
                 &#9900; На ряду з ІТ маркетинг- це професія майбутнього. Вона не тільки корисна, а ще й надзвичайно
                 захоплива. Діти дізнаються, про бренди і їх стратегії в дуже цікавому форматі від менеджера успішної
                 компанії веб-дизайну.
             </li>
             <li>
-                <b>Створення NFT</b><br>
+                <strong>Створення NFT</strong><br>
                 &#9900; Це те, що зараз у всіх на вустах, та навіть не всі дорослі знають, що таке NFT, а Ваша дитина
                 дізнається всіх подробиць і навіть створить власний NFT на спеціальному воркшопі. А може і не один.
                 Бо це круто!
             </li>
             <li>
-                <b>Управління проєктами.</b><br>
+                <strong>Управління проєктами.</strong><br>
                 &#9900; Сьогодні одна з найпопулярніших і прибуткових професій. Діти дізнаються основи цієї дисципліни
                 від досвідченого менеджера проектів в галузі ІТ, а також на практиці створять власний проект і прорахують
                 його ефективність.
             </li>
             <li>
-                <b>Фінансова грамотність для дітей.</b><br>
+                <strong>Фінансова грамотність для дітей.</strong><br>
                 &#9900; Фінансова грамотність - основа економічного добробуту людини. Розуміння основ і законів
                 функціонування світової фінансової системи і індивідуального бюджету людини - секрет виховання
                 успішної людини.
             </li>
             <li>
-                <b>Лідерство.</b><br>
+                <strong>Лідерство.</strong><br>
                 &#9900; Нестандартне мислення, вміння самостійно приймати рішення і брати на себе відповідальність - це
                 якості успішної людини і їх треба виховувати якомога раніше.
             </li>
         </ul>
-    </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Розклад дня</h2>
         <p>Програма кожного дня індивідуальна та корегується в залежності від розкладу занять дитини. Будні дні і
             вихідні мають різний розклад. В узагальненому вигляді будній день виглядає так:</p>
@@ -272,32 +220,28 @@
             <li>23:00 Відбій.</li>
         </ul>
         <p>У вихідні діти мають більше вільного часу, розважальних активностей, екскурсії.</p>
-    </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Команда</h2>
-        <b>З дітьми працюють тимліди</b> - дипломовані педагоги та психологи, викладачі приватних шкіл.
+        <strong>З дітьми працюють тимліди</strong> - дипломовані педагоги та психологи, викладачі приватних шкіл.
         Ми приймаємо в нашу команду лише професіоналів та людей, закоханих у свою справу, тому що робота з дітьми –
         це особлива професійна діяльність, яка потребує повної віддачі та високого рівня підготовки.<br>
-        <b>За групою з 7-8 дітей закріплений 1 дорослий,</b> тому кожна дитина має можливість безпосередньо звернутися до тимліду
+        <strong>За групою з 7-8 дітей закріплений 1 дорослий,</strong> тому кожна дитина має можливість безпосередньо звернутися до тимліду
         абсолютно з будь-яким питанням, вона буде почута і зрозуміла. Діти завжди перебувають у полі зору тимлідів.<br>
         Наші викладачі мають досвід роботи з дітьми понад 5 років, проходять спеціальну підготовку та курси надання першої
         допомоги.<br>
         Всі наші тимліди – веселі, чуйні, уважні та легкі на підйом люди, здатні створити довірчу атмосферу та налагодити
         особливий зв'язок із дітьми.
-    </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Харчування</h2>
         <p>У ресторані складено спеціальне меню для дітей шкільного віку. Страви гуцульскої та
             європейської кухні з натуральних екологічно чистих продуктів, частина яких вирощується безпосередньо
             неподалік від готельного комплексу. Усі страви складено з урахуванням рекомендацій щодо здорового
             харчування Всесвітньої Організації Охорони Здоров'я.<br>
-            У таборі встановлено <b>5-разовий</b> прийом їжі: сніданок,
+            У таборі встановлено <strong>5-разовий</strong> прийом їжі: сніданок,
             обід, вечерю та 2 перекуси (фрукти, ягоди, цільнозернові крекери, свіжі кисло-молочні продукти).
             Діти їдять смачно та різноманітно.</p>
 
@@ -321,42 +265,22 @@
         </ul>
 
         <div class="images">
-            <div class="image">
-                <img src="media/eat1.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat8.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat3.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat9.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat5.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat6.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat7.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat2.jpg" alt="eat">
-            </div>
-            <div class="image">
-                <img src="media/eat4.jpg" alt="eat">
-            </div>
+                <img class="image" src="media/eat1.jpg" alt="eat">
+                <img class="image" src="media/eat8.jpg" alt="eat">
+                <img class="image" src="media/eat3.jpg" alt="eat">
+                <img class="image" src="media/eat9.jpg" alt="eat">
+                <img class="image" src="media/eat5.jpg" alt="eat">
+                <img class="image" src="media/eat6.jpg" alt="eat">
+                <img class="image" src="media/eat7.jpg" alt="eat">
+                <img class="image" src="media/eat2.jpg" alt="eat">
+                <img class="image" src="media/eat4.jpg" alt="eat">
         </div>
-    </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Безпека</h2>
-        <p><b>Адміністрація пансіону La La Campus приділяє особливу увагу безпеці дітей під час перебування
-            в таборі:</b></p>
+        <p><strong>Адміністрація пансіону La La Campus приділяє особливу увагу безпеці дітей під час перебування
+            в таборі:</strong></p>
         <ul>
             <li>територія готельного комплексу закрита, огороджена та цілодобово охороняється. На території
                 комплексу ведеться відеоспостереження;</li>
@@ -366,7 +290,7 @@
         </ul>
 
         <h2>Медичне обслуговування</h2>
-        <p><b>У таборі цілодобово перебуває лікар і є необхідний мінімум засобів для надання першої медичної допомоги.</b>
+        <p><strong>У таборі цілодобово перебуває лікар і є необхідний мінімум засобів для надання першої медичної допомоги.</strong>
         За 10 км від готелю в смт. Берегомет є лікарня, при необхідності і з дозволу батьків завжди готові доставити
         туди дитину автомобілем табору.<br>
         Лікар 2 рази на день проводить температурний скринінг дітей та дорослих, стежить за дотриманням медичних та
@@ -375,13 +299,11 @@
         відповідає за дотримання обмежень у харчуванні для дітей з алергією та непереносимістю.<br>
         Усі діти застраховані, страховка поширюється на час трансферу та перебування у таборі.
         Страхування покриває COVID-19.</p>
-    </div>
 </section>
 
-<section>
-    <div class="container">
+<section class="container">
         <h2>Ціни і акції</h2>
-        <span>Ціна – <b>21 860 грн.</b></span>
+        <span>Ціна – <strong>21 860 грн.</strong></span>
         <h3>Увага! Ексклюзивна акція тільки для користувачів порталу childcamp.com.ua!
             Ціна путівки – 20 870 грн.</h3>
 
@@ -402,7 +324,6 @@
             <li>фірмові аксесуари La La Campus;</li>
             <li>фото та відеоматеріали.</li>
         </ul>
-    </div>
 </section>
 
 <footer>

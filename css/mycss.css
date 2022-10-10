@@ -97,7 +97,7 @@ header p{
     width: 100%;
 }
 
-.image img{
+.images img{
     min-width: 250px;
     min-height: 250px;
     max-width: 300px;
@@ -105,10 +105,20 @@ header p{
     margin: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     border-radius: 11px;
-    transition: 1s;
 }
 
-.image img:hover {
+figure{
+    margin: 0;
+}
+
+.link:hover, li:hover, figcaption:hover{
+    transition: 1s;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+img:hover {
+    transition: 1s;
     transform: scale(1.07);
 }
 
@@ -132,21 +142,25 @@ footer a{
     padding-right: 5px;
 }
 
-.up{
-    background-color: #009189;
+#myBtn {
+    display: none;
     position: fixed;
-    cursor: pointer;
     bottom: 20px;
     right: 30px;
     z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #009189;
+    color: #ffffff;
+    cursor: pointer;
     padding: 15px;
-    font-size: 15px;
     border-radius: 10px;
+    font-size: 18px;
 }
 
-.up a{
-    text-decoration: none;
-    color: #fcfcfc;
+#myBtn:hover {
+    background-color: #ffffff;
+    color: #009189;
 }
 
 .form{
@@ -195,6 +209,7 @@ fieldset{
 .button:hover {
     background-position: 0;
 }
+
 .button:hover, .button:focus {
     color: #fff;
     outline: 0;
