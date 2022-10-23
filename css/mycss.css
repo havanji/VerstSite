@@ -1,6 +1,7 @@
 html{
     box-sizing: border-box;
     min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 *,*::before, *::after{
@@ -47,6 +48,28 @@ nav a{
     padding-right: 5px;
 }
 
+.more{
+    position: relative;
+}
+
+.more:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    z-index: 4;
+    position: absolute;
+    background-color: #00504b;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.submenu a{
+    display: block;
+    padding: 10px 15px;
+}
+
 header p{
     background-color: #0e0083;
     height: 250px;
@@ -63,6 +86,16 @@ header p{
     padding: 10px;
     border-radius: 11px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container h2{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: rgba(0, 145, 137, 0.36);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 20%;
 }
 
 .link{
@@ -142,7 +175,7 @@ footer a{
     padding-right: 5px;
 }
 
-#myBtn {
+#btnUp {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -158,7 +191,7 @@ footer a{
     font-size: 18px;
 }
 
-#myBtn:hover {
+#btnUp:hover {
     background-color: #ffffff;
     color: #009189;
 }
