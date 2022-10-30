@@ -58,7 +58,7 @@ nav a{
 
 .submenu{
     display: none;
-    z-index: 4;
+    z-index: 11;
     position: absolute;
     background-color: #00504b;
     border-radius: 5px;
@@ -95,7 +95,8 @@ header p{
     background-color: rgba(0, 145, 137, 0.36);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    max-width: 20%;
+    text-align: center;
+    z-index: 10;
 }
 
 .link{
@@ -153,6 +154,78 @@ figure{
 img:hover {
     transition: 1s;
     transform: scale(1.07);
+}
+
+.opacity{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    position: relative;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 11px;
+}
+
+.opacity_image{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.opacity_text{
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 11px;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: rgba(0, 133, 130, 0.59);
+}
+
+.opacity_image:hover{
+    filter: opacity(0);
+}
+
+.opacity_text{
+    z-index: -1;
+    position: absolute;
+    top: -1px;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item img{
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 11px;
+}
+
+.grid-item {
+    background-color: rgba(59, 152, 148, 0.21);
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    text-align: center;
 }
 
 footer{
