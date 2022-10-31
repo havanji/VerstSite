@@ -131,7 +131,7 @@ header p{
     width: 100%;
 }
 
-.images img{
+.image{
     min-width: 250px;
     min-height: 250px;
     max-width: 300px;
@@ -206,26 +206,11 @@ img:hover {
 }
 
 .grid-container {
+    gap: 10px;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
-}
-
-.grid-item img{
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 300px;
-    max-height: 300px;
-    margin: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    border-radius: 11px;
-}
-
-.grid-item {
-    background-color: rgba(59, 152, 148, 0.21);
-    border: 1px solid rgba(0, 0, 0, 0.38);
-    text-align: center;
 }
 
 footer{
