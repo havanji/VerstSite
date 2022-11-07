@@ -262,6 +262,7 @@ footer a{
     display: flex;
     justify-content: center;
     margin: 50px;
+    /*max-width: 300px;*/
 }
 
 .form a{
@@ -272,6 +273,7 @@ footer a{
 }
 
 form{
+    min-width: 300px;
     background-color: rgba(243,253,255,0.38);
     padding: 10px;
     border-radius: 11px;
