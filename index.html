@@ -15,17 +15,19 @@
   <link rel="apple-touch-icon" sizes="152x152" href="iconified/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="iconified/apple-touch-icon-180x180.png">
   <link type="text/css" rel="stylesheet" href="css/mycss.css">
-  <script src="JS/ScrollTop.js"></script>
   <title>La La Campus</title>
 </head>
 
 <body>
   <main>
     <header>
+      <a href="index.html">
+        <img class="logo" src="media/thumb_LC_noBG.png" alt="Logo">
+      </a>
+
+      <input type="checkbox" id="burger">
+      <label for="burger"><img class="menu-btn" src="media/menu.png" alt="="></label>
       <nav class="menu">
-        <a href="index.html">
-          <img class="logo" src="media/thumb_LC_round.png" alt="Logo">
-        </a>
         <a href="about.html">Про нас</a>
         <a href="zayavka.html">Подати заявку</a>
         <a href="register.html">Реєстрація</a>
@@ -36,11 +38,13 @@
             <a href="https://childcamp.com.ua/ua">Childcamp</a>
           </div>
         </div>
+        <button class="toggle-theme"></button>
       </nav>
     </header>
 
     <button onclick="topFunction()" id="btnUp" title="Go to top">&#8657</button>
 
+    <section class="fix-menu"></section>
     <section class="container">
       <h2>Трішки про наш табір</h2>
       <div class="video">
@@ -120,6 +124,9 @@
       Перший в Україні портал дитячих таборів з безкоштовними прямими замовленнями в табір</p>
     <span><a href="https://www.online.ua/">Найкращі сайти Online.ua</a></span>
   </footer>
-</body>
 
+  <script src="JS/ScrollTop.js"></script>
+  <script src="JS/white-black.js"></script>
+  <script src="JS/hamburgerMenu.js"></script>
+</body>
 </html>

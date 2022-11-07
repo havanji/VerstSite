@@ -15,31 +15,38 @@
     <link rel="apple-touch-icon" sizes="180x180" href="iconified/apple-touch-icon-180x180.png">
     <link type="text/css" rel="stylesheet" href="css/mycss.css">
     <script src="JS/ScrollTop.js"></script>
+    <script src="JS/white-black.js"></script>
     <title>Про нас</title>
 </head>
 
 <body>
-<header>
-    <nav class="menu">
-        <a href="index.html">
-            <img class="logo" src="media/thumb_LC_round.png" alt="Logo">
-        </a>
-        <a href="about.html">Про нас</a>
-        <a href="zayavka.html">Подати заявку</a>
-        <a href="register.html">Реєстрація</a>
-        <a href="login.html">Вхід</a>
-        <div class="more"><a href="#">Наші партнери</a>
-            <div class="submenu">
-                <a href="https://www.online.ua/">Online UA</a>
-                <a href="https://childcamp.com.ua/ua">Childcamp</a>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<button onclick="topFunction()" id="btnUp"
-        title="Go to top">&#8657</button>
 <main>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="media/thumb_LC_noBG.png" alt="Logo">
+        </a>
+
+        <input type="checkbox" id="burger">
+        <label for="burger"><img class="menu-btn" src="media/menu.png" alt="="></label>
+        <nav class="menu">
+            <a href="about.html">Про нас</a>
+            <a href="zayavka.html">Подати заявку</a>
+            <a href="register.html">Реєстрація</a>
+            <a href="login.html">Вхід</a>
+            <div class="more"><a href="#">Наші партнери</a>
+                <div class="submenu">
+                    <a href="https://www.online.ua/">Online UA</a>
+                    <a href="https://childcamp.com.ua/ua">Childcamp</a>
+                </div>
+            </div>
+            <button class="toggle-theme"></button>
+        </nav>
+    </header>
+
+    <button onclick="topFunction()" id="btnUp"
+            title="Go to top">&#8657</button>
+
+    <section class="fix-menu"></section>
     <section class="container">
         <h2>Про табір</h2>
         <p><strong>La La Campus - сучасний табір в Карпатах для школярів 11-15 років на дистанційному навчанні.</strong>
@@ -248,15 +255,17 @@
 
     <section class="container">
         <h2>Команда</h2>
-        <strong>З дітьми працюють тимліди</strong> - дипломовані педагоги та психологи, викладачі приватних шкіл.
-        Ми приймаємо в нашу команду лише професіоналів та людей, закоханих у свою справу, тому що робота з дітьми –
-        це особлива професійна діяльність, яка потребує повної віддачі та високого рівня підготовки.<br>
-        <strong>За групою з 7-8 дітей закріплений 1 дорослий,</strong> тому кожна дитина має можливість безпосередньо звернутися до тимліду
-        абсолютно з будь-яким питанням, вона буде почута і зрозуміла. Діти завжди перебувають у полі зору тимлідів.<br>
-        Наші викладачі мають досвід роботи з дітьми понад 5 років, проходять спеціальну підготовку та курси надання першої
-        допомоги.<br>
-        Всі наші тимліди – веселі, чуйні, уважні та легкі на підйом люди, здатні створити довірчу атмосферу та налагодити
-        особливий зв'язок із дітьми.
+        <p>
+            <strong>З дітьми працюють тимліди</strong> - дипломовані педагоги та психологи, викладачі приватних шкіл.
+            Ми приймаємо в нашу команду лише професіоналів та людей, закоханих у свою справу, тому що робота з дітьми –
+            це особлива професійна діяльність, яка потребує повної віддачі та високого рівня підготовки.<br>
+            <strong>За групою з 7-8 дітей закріплений 1 дорослий,</strong> тому кожна дитина має можливість безпосередньо звернутися до тимліду
+            абсолютно з будь-яким питанням, вона буде почута і зрозуміла. Діти завжди перебувають у полі зору тимлідів.<br>
+            Наші викладачі мають досвід роботи з дітьми понад 5 років, проходять спеціальну підготовку та курси надання першої
+            допомоги.<br>
+            Всі наші тимліди – веселі, чуйні, уважні та легкі на підйом люди, здатні створити довірчу атмосферу та налагодити
+            особливий зв'язок із дітьми.
+        </p>
     </section>
 
     <section class="container">
@@ -287,17 +296,18 @@
             <li>раціон без аглютиногену;</li>
             <li>виключення продуктів, які викликають алергію в дитини чи інші рекомендації лікаря.</li>
         </ul>
-<!--        <div class="grid-container">-->
-<!--            <img class="image" src="media/eat1.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat8.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat3.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat9.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat5.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat6.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat7.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat2.jpg" alt="eat">-->
-<!--            <img class="image" src="media/eat4.jpg" alt="eat">-->
-<!--        </div>-->
+
+        <!--        <div class="grid-container">-->
+        <!--            <img class="image" src="media/eat1.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat8.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat3.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat9.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat5.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat6.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat7.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat2.jpg" alt="eat">-->
+        <!--            <img class="image" src="media/eat4.jpg" alt="eat">-->
+        <!--        </div>-->
 
         <div class="images">
             <img class="image" src="media/eat1.jpg" alt="eat">
@@ -371,5 +381,8 @@
     <span><a href="https://www.online.ua/">Найкращі сайти Online.ua</a></span>
 </footer>
 
+<script src="JS/ScrollTop.js"></script>
+<script src="JS/white-black.js"></script>
+<script src="JS/hamburgerMenu.js"></script>
 </body>
 </html>
