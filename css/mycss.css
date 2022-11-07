@@ -37,7 +37,7 @@ nav a:nth-child(2){
 }
 
 .logo-other{
-    padding: 0 0 0 50px;
+    margin: 0 0 0 3%;
     position: fixed;
 }
 
@@ -86,6 +86,7 @@ header p{
     padding: 10px;
     border-radius: 11px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    flex-direction: row;
 }
 
 .container h2{
@@ -109,15 +110,17 @@ header p{
 .video iframe{
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     border-radius: 11px;
+    float: left;
 }
 
 .video{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .video p{
-    max-width: 900px;
     margin: 10px;
 }
 
@@ -218,7 +221,6 @@ footer{
     display: flex;
     justify-content: center;
     background-color: #00504b;
-    height: 80px;
     align-items: center;
     flex-direction: column;
     width: 100%;
