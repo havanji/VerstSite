@@ -21,7 +21,7 @@ html{
     --opacity-bg: rgba(0, 133, 130, 0.59);
     --form-bg: rgba(243,253,255,0.38);
 
-    --toggle-bg: url(/media/moon.png);
+    --toggle-bg: url(../media/moon.png);
 }
 
 :root[data-theme='dark']{
@@ -34,7 +34,7 @@ html{
     --opacity-bg: rgba(0, 108, 105, 0.59);
     --form-bg: rgba(149, 151, 152, 0.38);
 
-    --toggle-bg: url(/media/sun.png);
+    --toggle-bg: url(../media/sun.png);
 }
 
 body{
