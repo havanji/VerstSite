@@ -100,6 +100,10 @@ nav{
         height: 100%;
         text-align: center;
     }
+    .submenu{
+        left: 60%;
+        background: var(--main-bg);
+    }
     #burger:checked + label + nav{
         display: block;
         animation: show .5s ease;
@@ -157,7 +161,7 @@ nav a{
     background-color: rgba(243,253,255,0.05);
     padding: 10px;
     border-radius: 11px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: var(--box-shadow);
     flex-direction: row;
 }
 
@@ -294,14 +298,14 @@ img:hover {
     top: -1px;
 }
 
-.grid-container {
-    gap: 10px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    justify-content: center;
-}
+/*.grid-container {*/
+/*    gap: 10px;*/
+/*    width: 100%;*/
+/*    display: grid;*/
+/*    grid-template-columns: auto auto auto;*/
+/*    padding: 10px;*/
+/*    justify-content: center;*/
+/*}*/
 
 footer{
     display: flex;
