@@ -442,9 +442,15 @@ fieldset {
     text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+    #ad{
+        width: 80%;
+    }
+}
+
 #ad .no, .ok, a{
     cursor: pointer;
-    color: var(--text);
+    color: var(--hover-text);
 }
 
 #ad .close{
