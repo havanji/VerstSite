@@ -44,6 +44,10 @@ body {
     min-height: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 header {
     display: flex;
     position: fixed;
@@ -131,7 +135,6 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: var(--text);
     padding-left: 5px;
     padding-right: 5px;
@@ -189,7 +192,6 @@ p, h2, h3, li, strong, span {
 }
 
 .link {
-    text-decoration: none;
     color: #000000;
     padding-left: 5px;
     padding-right: 5px;
@@ -323,7 +325,6 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
     color: var(--links);
     padding-left: 5px;
     padding-right: 5px;
@@ -368,11 +369,9 @@ footer a {
     display: flex;
     justify-content: center;
     margin: 50px;
-    /*max-width: 300px;*/
 }
 
 .form a {
-    text-decoration: none;
     color: var(--links-form);
     padding-left: 5px;
     padding-right: 5px;
@@ -417,4 +416,48 @@ fieldset {
 .button:hover, .button:focus {
     color: var(--text);
     outline: 0;
+}
+
+#bg_popup{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#ad {
+    background: var(--main-bg);
+    width: 20%;
+    margin: 20% auto;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 11px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#ad .no, .ok, a{
+    cursor: pointer;
+    color: var(--text);
+}
+
+#ad .close{
+    display:block;
+    position:absolute;
+    top: -10px;
+    right:10px;
+    background: darkgreen;
+    border-radius: 10px;
+    padding: 3px 6px 3px 6px;
+    cursor: pointer;
+}
+
+#ad .close:hover{
+    background: darkred;
 }
