@@ -1,4 +1,4 @@
-var delay_popup = 5000;
+let delay_popup = 5000;
 setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
 
 function closeWin() {
