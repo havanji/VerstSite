@@ -243,7 +243,7 @@ figcaption {
     color: var(--text);
 }
 
-.link:hover, li:hover, figcaption:hover {
+.link:hover, li:hover, figcaption:hover{
     transition: 1s;
     color: var(--hover-text);
     text-decoration: underline;
@@ -391,7 +391,7 @@ fieldset {
 
 .button {
     border: 1px solid var(--bg-cont);
-    color: #222222;
+    color: var(--hover-text);
     background-image: -webkit-linear-gradient(45deg, #00504b 50%, transparent 50%);
     background-image: linear-gradient(45deg, #00504b 50%, transparent 50%);
     background-position: 100%;
@@ -467,3 +467,16 @@ fieldset {
 #ad .close:hover{
     background: darkred;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 10;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+.show {display:block;}

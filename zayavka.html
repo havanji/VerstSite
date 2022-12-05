@@ -34,7 +34,7 @@
                 <label for="email">Введіть свій E-Mail:</label><br>
                 <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
                 <label for="userPassword">Введіть свій пароль:</label><br>
-                <input id="userPassword" type="password" placeholder="********"><br>
+                <input id="userPassword" type="password" minlength="8" placeholder="********"><br>
                 <span><a href="register.html">Створти акаунт (якщо його не має)</a></span>
             </fieldset>
 
@@ -76,7 +76,7 @@
                 </select>
                 <br>
                 <label for="№card">№ картки</label><br>
-                <input type="text" id="№card" placeholder="Введіть № картки" maxlength="16" size="16" required><br>
+                <input type="text" id="№card" placeholder="Введіть № картки" minlength="16" maxlength="16" size="16" required><br>
                 <label for="mm" for="yy">Місяць і рік до якого дійсна картка</label><br>
                 <input type="text" id="mm" placeholder="mm" maxlength="2" size="2" required>
                 <input type="text" id="yy" placeholder="yy" maxlength="2" size="2" required><br>
